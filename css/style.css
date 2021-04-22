@@ -124,31 +124,24 @@ img {
   border-radius: 2px;
 }
 
+.flex-position {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Стили для index.html */
 
 /* Шапка */
-
-.header__container,
-.nav {
-  display: flex;
-  align-items: center;
-}
 
 .nav__logo {
   margin-right: 93px;
 }
 
-.nav__list,
-.contacts {
-  display: flex;
-  align-items: center;
-
+.nav__list {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-}
-
-.nav__list--color {
   color: var(--second-color);
 }
 
@@ -159,13 +152,14 @@ img {
 
 .nav__link,
 .contacts__link {
-  display: flex;
-  align-items: center;
   padding: 32px 0;
 }
 
-.contacts--margin-left {
+.contacts {
   margin-left: auto;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 
 .contacts__icon {
@@ -236,20 +230,20 @@ img {
   padding-bottom: 0;
 }
 
-.advantages-items {
+.advantages__list {
   display: flex;
   line-height: 1.71;
 }
 
-.advantages-items .item:not(:last-child) {
-  margin-right: 30px;
-}
-
-.advantages-items .item {
+.advantages__item {
   width: calc(100% / 4);
 }
 
-.advantage-item::before {
+.advantages__item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.advantages__item::before {
   content: '';
   display: flex;
   width: 100%;
@@ -263,22 +257,22 @@ img {
 }
 
 .icon-antenna::before {
-  background-image: url(../images/icons/antenna.svg);
+  background-image: url(../images/icons/icon-antenna.svg);
 }
 
 .icon-clock::before {
-  background-image: url(../images/icons/clock.svg);
+  background-image: url(../images/icons/icon-clock.svg);
 }
 
 .icon-diagram::before {
-  background-image: url(../images/icons/diagram.svg);
+  background-image: url(../images/icons/icon-diagram.svg);
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/icons/astronaut.svg);
+  background-image: url(../images/icons/icon-astronaut.svg);
 }
 
-.advantage-title {
+.advantages__title {
   margin-bottom: 10px;
 
   font-weight: 700;
