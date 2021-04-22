@@ -102,6 +102,10 @@ img {
   color: var(--dark-color);
 }
 
+.logo__text {
+  color: var(--accent-color);
+}
+
 .current {
   position: relative;
   color: var(--accent-color);
@@ -124,22 +128,18 @@ img {
 
 /* Шапка */
 
-.header-container,
-.header-nav {
+.header__container,
+.nav {
   display: flex;
   align-items: center;
 }
 
-.header-logo {
+.nav__logo {
   margin-right: 93px;
 }
 
-.logo-text {
-  color: var(--accent-color);
-}
-
-.header-items,
-.header-contacts {
+.nav__list,
+.contacts {
   display: flex;
   align-items: center;
 
@@ -148,34 +148,30 @@ img {
   letter-spacing: 0.02em;
 }
 
-.header-items .item {
+.nav__list--color {
+  color: var(--second-color);
+}
+
+.nav__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-items .item:last-child {
-  margin-right: 0;
-}
-
-.header-items .link,
-.header-contacts .link {
+.nav__link,
+.contacts__link {
   display: flex;
   align-items: center;
   padding: 32px 0;
 }
 
-.header-items {
-  color: var(--second-color);
-}
-
-.header-contacts {
+.contacts--margin-left {
   margin-left: auto;
 }
 
-.header-contacts .item:not(:last-child) {
+.contacts__item:not(:last-child) {
   margin-right: 50px;
 }
 
-.contact-icon {
+.contacts__icon {
   margin-right: 10px;
   fill: currentColor;
 }
@@ -856,7 +852,7 @@ img {
 
 /* Cтили для portfolio.html */
 
-.header-border {
+.header--border {
   border-bottom: 1px solid #ececec;
 }
 
