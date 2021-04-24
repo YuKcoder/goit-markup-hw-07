@@ -15,19 +15,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__container flex-position container">
+      <div class="container flex-position">
         <nav class="nav flex-position">
           <a class="nav__logo logo" href="./"><span class="logo__text">Web</span>Studio</a>
           <ul class="nav__list list flex-position">
-            <li class="nav__item"><a class="nav__link flex-position link current" href="./">Студия</a></li>
-            <li class="nav__item"><a class="nav__link flex-position link" href="./portfolio.html">Портфолио</a></li>
-            <li class="nav__item"><a class="nav__link flex-position link" href="">Контакты</a></li>
+            <li class="nav__item"><a class="nav__link flex-position link link--padding current" href="./">Студия</a></li>
+            <li class="nav__item"><a class="nav__link flex-position link link--padding" href="./portfolio.html">Портфолио</a></li>
+            <li class="nav__item"><a class="nav__link flex-position link link--padding" href="">Контакты</a></li>
           </ul>
         </nav>
 
         <ul class="contacts contacts--margin-left list flex-position">
           <li class="contacts__item">
-            <a class="contacts__link flex-position link" href="mailto:info@devstudio.com">
+            <a class="contacts__link flex-position link link--padding" href="mailto:info@devstudio.com">
               <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
@@ -35,7 +35,7 @@
             </a>
           </li>
           <li class="contacts__item">
-            <a class="contacts__link flex-position link" href="tel:+380961111111">
+            <a class="contacts__link flex-position link link--padding" href="tel:+380961111111">
               <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
@@ -51,7 +51,7 @@
       <section class="section hero">
         <div class="container hero__container">
           <h1 class="hero__title">Эффективные решения для вашего бизнеса</h1>
-          <button class="hero__btn" type="button" data-modal-open>Заказать услугу</button>
+          <button class="btn" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -411,7 +411,7 @@
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__info">
-          <a class="logo logo__footer" href="./"><span class="logo__text">Web</span>Studio</a>
+          <a class="footer__logo logo" href="./"><span class="logo__text">Web</span>Studio</a>
           <address class="address">
             <p class="address__text">г. Киев, пр-т Леси Украинки, 26</p>
           </address>
@@ -482,7 +482,7 @@
           <p class="footer__text">Подпишитесь на рассылку</p>
           <form class="form">
             <input class="form__input" type="email" name="email" placeholder="E-mail" />
-            <button class="form__btn flex-position" type="submit">
+            <button class="btn flex-position" type="submit">
               Подписаться
               <svg class="form__btn-icon">
                 <use href="./images/icons.svg#icon-send"></use>
@@ -551,7 +551,7 @@
             </label>
           </div>
 
-          <button class="modal__btn" type="submit" data-modal-send>Отправить</button>
+          <button class="modal__btn btn" type="submit" data-modal-send>Отправить</button>
         </form>
       </div>
     </div>

@@ -124,6 +124,32 @@ img {
   border-radius: 2px;
 }
 
+.btn {
+  padding: 10px 0;
+  min-width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  color: var(--light-text-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: #188ce8;
+}
+
 .flex-position {
   display: flex;
   align-items: center;
@@ -150,8 +176,7 @@ img {
   margin-right: 50px;
 }
 
-.nav__link,
-.contacts__link {
+.link--padding {
   padding: 32px 0;
 }
 
@@ -197,31 +222,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-text-color);
-}
-
-.hero__btn {
-  padding: 10px 32px;
-
-  font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  border: 0;
-  border-radius: 4px;
-
-  color: var(--light-text-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.hero__btn:hover,
-.hero__btn:focus {
-  background-color: #188ce8;
 }
 
 /* Наши преимущества */
@@ -278,7 +278,6 @@ img {
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--second-color);
 }
@@ -461,7 +460,7 @@ img {
   width: calc((50% - 45px) / 2);
 }
 
-.logo__footer {
+.footer__logo {
   display: block;
   margin-bottom: 20px;
   color: var(--light-text-color);
@@ -525,6 +524,7 @@ img {
 .form__input {
   width: 358px;
   padding: 14px 16px;
+  margin-right: 12px;
 
   font-size: 16px;
   line-height: 1.25;
@@ -543,32 +543,6 @@ img {
   line-height: 1.25;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
-}
-
-.form__btn {
-  padding: 10px 28px;
-  margin-left: 12px;
-  width: 200px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.87;
-  letter-spacing: 0.06em;
-
-  color: var(--light-text-color);
-  background: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.form__btn:hover,
-.form__btn:focus {
-  background-color: #188ce8;
 }
 
 .form__btn-icon {
@@ -797,29 +771,6 @@ img {
 .modal__btn {
   display: block;
   margin: 0 auto;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  width: 200px;
-
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.9;
-  text-align: center;
-  letter-spacing: 0.06em;
-
-  color: var(--light-text-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  border: none;
-  cursor: pointer;
-
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.modal__btn:hover,
-.modal__btn:focus {
-  background-color: #188ce8;
 }
 
 /* Cтили для portfolio.html */
@@ -864,7 +815,7 @@ img {
 
 /* Карточки портфолио */
 
-.cards {
+.card-set {
   display: flex;
   flex-wrap: wrap;
   padding-top: 50px;
@@ -872,7 +823,7 @@ img {
   margin-left: -30px;
 }
 
-.cards__item {
+.card-set__item {
   margin-top: 30px;
   margin-left: 30px;
 
@@ -880,7 +831,7 @@ img {
   line-height: 1.87;
 }
 
-.cards__link {
+.card-set__link {
   display: block;
 
   text-decoration: none;
@@ -889,12 +840,12 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards__link:hover,
-.cards__link:focus {
+.card-set__link:hover,
+.card-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
-.cards__overlay {
+.product {
   position: relative;
   overflow: hidden;
 }
@@ -913,8 +864,8 @@ img {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.cards__link:hover .overlay,
-.cards__link:focus .overlay {
+.card-set__link:hover .overlay,
+.card-set__link:focus .overlay {
   transform: translateX(0);
 }
 
@@ -933,14 +884,14 @@ img {
   transform: translate(-50%, -50%);
 }
 
-.cards__content {
+.product__content {
   padding: 20px 24px;
 
   border: 1px solid #eeeeee;
   border-top: none;
 }
 
-.cards__title {
+.product__title {
   margin-bottom: 4px;
 
   font-weight: 700;
@@ -950,6 +901,6 @@ img {
   color: var(--second-color);
 }
 
-.cards__text {
+.product__text {
   margin-bottom: 0;
 }
