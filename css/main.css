@@ -98,8 +98,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.link:hover,
-.link:focus {
+.link:hover, .link:focus {
   color: var(--accent-color);
 }
 
@@ -148,8 +147,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.btn:hover,
-.btn:focus {
+.btn:hover, .btn:focus {
   background-color: #188ce8;
 }
 
@@ -203,8 +201,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.socials__link:hover,
-.socials__link:focus {
+.socials__link:hover, .socials__link:focus {
   background-color: var(--accent-color);
 }
 
@@ -492,8 +489,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.portfolio-nav__btn:hover,
-.portfolio-nav__btn:focus {
+.portfolio-nav__btn:hover, .portfolio-nav__btn:focus {
   color: var(--light-text-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -522,8 +518,7 @@ img {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card-set__link:hover,
-.card-set__link:focus {
+.card-set__link:hover, .card-set__link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -679,19 +674,19 @@ img {
 }
 
 .icon-antenna::before {
-  background-image: url(../images/icons/icon-antenna.svg);
+  background-image: url("../images/icons/icon-antenna.svg");
 }
 
 .icon-clock::before {
-  background-image: url(../images/icons/icon-clock.svg);
+  background-image: url("../images/icons/icon-clock.svg");
 }
 
 .icon-diagram::before {
-  background-image: url(../images/icons/icon-diagram.svg);
+  background-image: url("../images/icons/icon-diagram.svg");
 }
 
 .icon-astronaut::before {
-  background-image: url(../images/icons/icon-astronaut.svg);
+  background-image: url("../images/icons/icon-astronaut.svg");
 }
 
 .advantages__title {
@@ -791,8 +786,7 @@ img {
   transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.clients__link:hover,
-.clients__link:focus {
+.clients__link:hover, .clients__link:focus {
   border: 1px solid var(--accent-color);
 }
 
